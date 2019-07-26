@@ -1,6 +1,6 @@
 {
   "short_name": "Mood Swings Tracker",
-  "name": "A simple PWA app to track mood swings",
+  "name": "Mood Swings Tracker",
   "icons": [
     {
       "src": "https://pawnesh.github.io/mood-swings-tracker/mood-swings.svg",
