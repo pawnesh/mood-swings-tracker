@@ -1,0 +1,143 @@
+## V0.1
+
+1. Home Page
+    on dim emoji icon click - user will show popup with 
+    differnet emoji representing different moods. Onclicking
+    popup emotion. It will save it in db for that date and time
+
+    ## Moods
+    {
+        "Cheerful": {
+            "value": 12,
+            "icon" : ""
+        },
+        "Happy" : {
+            "value": 11,
+            "icon" : ""
+        },
+        "Excited" : {
+            "value": 10,
+            "icon" : ""
+        },
+        "Flirty" : {
+            "value": 9,
+            "icon" : ""
+        },
+        "Giddy" : {
+            "value": 8,
+            "icon" : ""
+        },
+        "Good" : {
+            "value": 7,
+            "icon" : ""
+        },
+        "Joyful" : {
+            "value": 6,
+            "icon" : ""
+        },
+        "Loving" : {
+            "value": 5,
+            "icon" : ""
+        },
+        "Optimistic" : {
+            "value": 4,
+            "icon" : ""
+        },
+        "Peaceful" : {
+            "value": 3,
+            "icon" : ""
+        },
+        "Silly" : {
+            "value": 2,
+            "icon" : ""
+        },
+        "Sympathetic" : {
+            "value": 1,
+            "icon" : ""
+        },
+        "Calm" : {
+            "value": 0,
+            "icon" : ""
+        },
+        "Frustrated" : {
+            "value": -1,
+            "icon" : ""
+        },
+        "Depressed" : {
+            "value": -2,
+            "icon" : ""
+        },
+        "Sad" : {
+            "value": -3,
+            "icon" : ""
+        },
+        "Annoyed" : {
+            "value": -4,
+            "icon" : ""
+        },
+        "Angry" : {
+            "value": -5,
+            "icon" : ""
+        },
+        "Guilty" : {
+            "value": -6,
+            "icon" : ""
+        },
+        "Indifferent" : {
+            "value": -7,
+            "icon" : ""
+        },
+        "Irritated" : {
+            "value": -8,
+            "icon" : ""
+        },
+        "Melancholy" : {
+            "value": -9,
+            "icon" : ""
+        },
+        "Restless" : {
+            "value": -10,
+            "icon" : ""
+        },
+         "Stressed" : {
+            "value": -11,
+            "icon" : ""
+        },
+         "Weird" : {
+            "value": -12,
+            "icon" : ""
+        }
+    }
+
+2. Report Page
+    A page to list the report of the moods
+    a. today
+    b. yesterday
+    c. weekly
+    e. all time
+
+
+Data Structure
+{
+    "moods": {
+        "Year": {
+            "month": {
+                "day": []
+            }
+        }
+    }
+}
+-- sample --
+{
+    "moods": {
+        2019: {
+            7: {
+                1: [0,-2,2,3],
+                25: [2,3,2]
+            }
+            12: {
+                22: [0, 2, 3]
+            }
+        }
+    }
+}

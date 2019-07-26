@@ -1,33 +1,62 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body{
+  background: #00d0b3;
+  color: #FFF;
+  padding: 10px;
+  font-family: 'Ubuntu';
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome and Opera */
+}
+
+.emotions-list{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  width: 326px;
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.emotions-list ul{
+  display: list-item;
+  list-style: none;
+  padding-left: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.emotions-list ul li{
+  list-style: none;
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
+  margin-top:25px;
+  padding: 6px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.emotions-list ul li span{
+  font-size: 66px;
+  display: block;
+  padding: 6px;
+}
+.clear{
+  clear: both;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selected-element{
+  display: list-item;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 69px;
+  z-index: 12;
+}
+
+.selected-element span{
+  font-size: 105px;
+  display: block;
+  padding: 6px;
 }
