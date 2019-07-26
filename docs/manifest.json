@@ -3,12 +3,12 @@
   "name": "A simple PWA app to track mood swings",
   "icons": [
     {
-      "src": "mood-swings.svg",
+      "src": "https://pawnesh.github.io/mood-swings-tracker/mood-swings.svg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://pawnesh.github.io/mood-swings-tracker/",
   "display": "standalone",
   "theme_color": "#00d0b3",
   "background_color": "#00d0b3"
