@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.fc3b5979.chunk.css",
-    "main.js": "/static/js/main.65c05ea5.chunk.js",
-    "main.js.map": "/static/js/main.65c05ea5.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.4e81ba5b.chunk.js": "/static/js/2.4e81ba5b.chunk.js",
-    "static/js/2.4e81ba5b.chunk.js.map": "/static/js/2.4e81ba5b.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.5f4cfc0d1316b052281eb27df14780ad.js": "/precache-manifest.5f4cfc0d1316b052281eb27df14780ad.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.fc3b5979.chunk.css.map": "/static/css/main.fc3b5979.chunk.css.map"
+    "main.css": "/mood-swings-tracker/static/css/main.fc3b5979.chunk.css",
+    "main.js": "/mood-swings-tracker/static/js/main.efa3dc60.chunk.js",
+    "main.js.map": "/mood-swings-tracker/static/js/main.efa3dc60.chunk.js.map",
+    "runtime~main.js": "/mood-swings-tracker/static/js/runtime~main.fcbc3a10.js",
+    "runtime~main.js.map": "/mood-swings-tracker/static/js/runtime~main.fcbc3a10.js.map",
+    "static/js/2.4e81ba5b.chunk.js": "/mood-swings-tracker/static/js/2.4e81ba5b.chunk.js",
+    "static/js/2.4e81ba5b.chunk.js.map": "/mood-swings-tracker/static/js/2.4e81ba5b.chunk.js.map",
+    "index.html": "/mood-swings-tracker/index.html",
+    "precache-manifest.466821190da1996d7dbae2ba889b3e9e.js": "/mood-swings-tracker/precache-manifest.466821190da1996d7dbae2ba889b3e9e.js",
+    "service-worker.js": "/mood-swings-tracker/service-worker.js",
+    "static/css/main.fc3b5979.chunk.css.map": "/mood-swings-tracker/static/css/main.fc3b5979.chunk.css.map"
   }
 }
