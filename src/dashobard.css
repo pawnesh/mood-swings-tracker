@@ -1,0 +1,32 @@
+.dashboard header h3{
+    padding: 9px;
+}
+.dashboard .content{
+    padding: 5px 21px;
+    min-height: 100px;
+}
+
+.dashboard .content img{
+    width: 34px;
+    display: inline-block;
+}
+
+.dashboard footer{
+    text-align: center;
+}
+
+.dashboard footer .average img{
+    width: 51px;
+}
+.dashboard footer .average{
+    width: 104px;
+    margin: auto;
+}
+
+.dashboard .block:first-child{
+    margin-top: 10px;
+}
+
+.dashboard .block{
+    margin-top: 176px;
+}

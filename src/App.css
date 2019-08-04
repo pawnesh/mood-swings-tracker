@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 body{
-  background: #00d0b3;
-  color: #FFF;
+  /* background: #00d0b3; */
+  background: #f7f7f7;
+  /* background: rgb(34,125,112);
+  background: -moz-linear-gradient(90deg, rgba(34,125,112,1) 0%, rgba(0,208,179,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(34,125,112,1) 0%, rgba(0,208,179,1) 100%);
+  background: linear-gradient(90deg, rgba(34,125,112,1) 0%, rgba(0,208,179,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#227d70",endColorstr="#00d0b3",GradientType=1);  */
+  /* color: #FFF; */
+  color: rgba(0,0,0,0.7);
   padding: 10px;
   font-family: 'Ubuntu';
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
-   -khtml-user-select: none; /* Konqueror HTML */
-     -moz-user-select: none; /* Firefox */
-      -ms-user-select: none; /* Internet Explorer/Edge */
-          user-select: none; /* Non-prefixed version, currently
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                 supported by Chrome and Opera */
 }
 
@@ -37,6 +44,10 @@ body{
   cursor: pointer;
 }
 
+.emotions-list ul li span img{
+    width: 66px;
+}
+
 .emotions-list ul li span{
   font-size: 66px;
   display: block;
@@ -59,4 +70,12 @@ body{
   font-size: 105px;
   display: block;
   padding: 6px;
+}
+
+.selected-element span img{
+  width: 142px;
+}
+
+.header{
+  background: #efefef;
 }

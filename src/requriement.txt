@@ -141,3 +141,14 @@ Data Structure
         }
     }
 }
+
+
+# version  0.4
+    1. Fix the horizontal scrolling
+    2. Icon issue on android for last two emojis
+    3. Save in store
+    4. Load from store
+    5. Display the Report
+        5.1 Thumb slider for the screen switch
+    6. Make it offline
+    
