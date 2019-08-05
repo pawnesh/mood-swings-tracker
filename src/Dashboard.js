@@ -111,7 +111,7 @@ class Dashboard extends React.Component {
         }
         var emotion = EMOTIONS_REVERSE[nearestEmotionScore];
         return <div className="average">
-            <img src={'/images/'+emotion.icon+'.svg'} alt={emotion.name}/><br/>
+            <img src={process.env.PUBLIC_URL+'/images/'+emotion.icon+'.svg'} alt={emotion.name}/><br/>
             {emotion.name}
         </div>;
     }
@@ -120,7 +120,7 @@ class Dashboard extends React.Component {
         var temp = [];
         var average = 0;
         list.forEach(function (element,index) {
-            temp.push(<img src={'/images/'+element.icon+'.svg'} alt={element.name} key={element.name+index+title}/>);
+            temp.push(<img src={process.env.PUBLIC_URL+'/images/'+element.icon+'.svg'} alt={element.name} key={element.name+index+title}/>);
             average += parseInt(element.value);
         });
         var average = average/list.length;

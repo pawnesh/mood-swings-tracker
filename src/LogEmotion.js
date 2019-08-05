@@ -31,14 +31,14 @@ class LogEmotion extends React.Component{
         var elements = [];
 
         for (var emotion_name in EMOTIONS) {
-            elements.push(<li data-key={emotion_name} key={emotion_name} value={EMOTIONS[emotion_name].value} data-action={EMOTIONS[emotion_name].action} onClick={this.saveEmotion}><span><img src={'/images/'+EMOTIONS[emotion_name].icon+'.svg'} alt={emotion_name}/></span>{emotion_name}</li>);
+            elements.push(<li data-key={emotion_name} key={emotion_name} value={EMOTIONS[emotion_name].value} data-action={EMOTIONS[emotion_name].action} onClick={this.saveEmotion}><span><img src={process.env.PUBLIC_URL+'/images/'+EMOTIONS[emotion_name].icon+'.svg'} alt={emotion_name}/></span>{emotion_name}</li>);
         }
 
         var selectedElememnt = null;
         if(this.state.selected_element != null){
             selectedElememnt =  <div className="selected-element">
             <h3>Entery saved!</h3>
-            <span className={this.state.animate_class}><img src={'/images/'+EMOTIONS[this.state.selected_element].icon+'.svg'} alt={emotion_name}/></span>{this.state.selected_element}
+            <span className={this.state.animate_class}><img src={process.env.PUBLIC_URL+'/images/'+EMOTIONS[this.state.selected_element].icon+'.svg'} alt={emotion_name}/></span>{this.state.selected_element}
             </div>;
             elements = null;
         }
