@@ -14,7 +14,6 @@ class Dashboard extends React.Component {
     }
 
     componentDidMount() {
-        var self = this;
         var emotions = this.db.getAllEmotion();
         var keys = [];
         for (var key in emotions) {
@@ -28,12 +27,68 @@ class Dashboard extends React.Component {
             if(EMOTIONS_REVERSE[element])
                 today.push(EMOTIONS_REVERSE[element]);
         });
-        this.updateState(today, null, null);
 
         // week
+        var week = [];
+        for(var i=0; i<7;i++){
+            now = new Date();
+            now.setDate(now.getDate() - i);
+            var key = dateFormat(now,"yyyy-m-d");
+            var arr = this.db.getEmotion(key);
+            var sum = 0;
+            if(arr == null){
+                continue;
+            }
+            if(arr.length == 0){
+                continue;
+            }
+            if(arr[0] == ''){
+                continue;
+            }
+            arr.forEach((element)=> {
+                if(element){
+                    sum += parseInt(element);
+                }
+            });
+            sum = sum/arr.length;
+            var nearestEmotionScore = EMOTIONS_SCORES.reduce(function(prev, curr) {
+                return (Math.abs(curr - sum) < Math.abs(prev - sum) ? curr : prev);
+            });
+            week.push(EMOTIONS_REVERSE[nearestEmotionScore]);
+        }
+        console.log(week);
 
         // month
-        
+        var month = [];
+        for(var i=0; i<30;i++){
+            now = new Date();
+            now.setDate(now.getDate() - i);
+            var key = dateFormat(now,"yyyy-m-d");
+            var arr = this.db.getEmotion(key);
+            var sum = 0;
+            if(arr == null){
+                continue;
+            }
+            if(arr.length == 0){
+                continue;
+            }
+            if(arr[0] == ''){
+                continue;
+            }
+            
+            arr.forEach((element)=> {
+                if(element){
+                    sum += parseInt(element);
+                }
+            });
+            sum = sum/arr.length;
+            var nearestEmotionScore = EMOTIONS_SCORES.reduce(function(prev, curr) {
+                return (Math.abs(curr - sum) < Math.abs(prev - sum) ? curr : prev);
+            });
+            month.push(EMOTIONS_REVERSE[nearestEmotionScore]);
+        }
+
+        this.updateState(today,week,month);
     }
 
     updateState(argToday, argWeek, argMonth) {
@@ -65,12 +120,12 @@ class Dashboard extends React.Component {
         var temp = [];
         var average = 0;
         list.forEach(function (element,index) {
-            temp.push(<img src={'/images/'+element.icon+'.svg'} alt={element.name} key={element.name+index}/>);
+            temp.push(<img src={'/images/'+element.icon+'.svg'} alt={element.name} key={element.name+index+title}/>);
             average += parseInt(element.value);
         });
-        var average = average/this.state.today.length;
+        var average = average/list.length;
 
-        var el = <div className="block" key="block-today">
+        var el = <div className="block" key={'block'+title}>
             <header className="header"><h3>{title}</h3></header>
             <div className="content">
                 {temp}
@@ -85,18 +140,18 @@ class Dashboard extends React.Component {
     render() {
         var reportElement = [];
 
-        if (this.state.today) {
+        if (this.state.today && this.state.today.length > 0) {
             var el = this.getBlock(this.state.today,'Today');
             reportElement.push(el);
         }
 
-        if (this.state.today) {
-            var el = this.getBlock(this.state.today,'Week');
+        if (this.state.week && this.state.week.length > 0) {
+            var el = this.getBlock(this.state.week,'Week');
             reportElement.push(el);
         }
 
-        if (this.state.today) {
-            var el = this.getBlock(this.state.today,'Month');
+        if (this.state.month && this.state.month.length > 0) {
+            var el = this.getBlock(this.state.month,'Month');
             reportElement.push(el);
         }
 

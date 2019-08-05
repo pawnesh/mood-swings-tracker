@@ -2,6 +2,7 @@
 
 For use: https://pawnesh.github.io/mood-swings-tracker/
 
+Its a chrome App so, you can visit above link on chrome and add to home screen. Chrome should ask you to add this to your home screen.
 
 
 ## Credit
