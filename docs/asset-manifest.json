@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mood-swings-tracker/static/css/main.fc3b5979.chunk.css",
-    "main.js": "/mood-swings-tracker/static/js/main.efa3dc60.chunk.js",
-    "main.js.map": "/mood-swings-tracker/static/js/main.efa3dc60.chunk.js.map",
+    "main.css": "/mood-swings-tracker/static/css/main.8d8bf241.chunk.css",
+    "main.js": "/mood-swings-tracker/static/js/main.60f6f58f.chunk.js",
+    "main.js.map": "/mood-swings-tracker/static/js/main.60f6f58f.chunk.js.map",
     "runtime~main.js": "/mood-swings-tracker/static/js/runtime~main.fcbc3a10.js",
     "runtime~main.js.map": "/mood-swings-tracker/static/js/runtime~main.fcbc3a10.js.map",
-    "static/js/2.4e81ba5b.chunk.js": "/mood-swings-tracker/static/js/2.4e81ba5b.chunk.js",
-    "static/js/2.4e81ba5b.chunk.js.map": "/mood-swings-tracker/static/js/2.4e81ba5b.chunk.js.map",
+    "static/js/2.24440903.chunk.js": "/mood-swings-tracker/static/js/2.24440903.chunk.js",
+    "static/js/2.24440903.chunk.js.map": "/mood-swings-tracker/static/js/2.24440903.chunk.js.map",
     "index.html": "/mood-swings-tracker/index.html",
-    "precache-manifest.466821190da1996d7dbae2ba889b3e9e.js": "/mood-swings-tracker/precache-manifest.466821190da1996d7dbae2ba889b3e9e.js",
+    "precache-manifest.98417e82997f556a4d1d5d65f7e0dfba.js": "/mood-swings-tracker/precache-manifest.98417e82997f556a4d1d5d65f7e0dfba.js",
     "service-worker.js": "/mood-swings-tracker/service-worker.js",
-    "static/css/main.fc3b5979.chunk.css.map": "/mood-swings-tracker/static/css/main.fc3b5979.chunk.css.map"
+    "static/css/main.8d8bf241.chunk.css.map": "/mood-swings-tracker/static/css/main.8d8bf241.chunk.css.map"
   }
 }
