@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "https://pawnesh.github.io/mood-swings-tracker/static/css/main.229668c4.chunk.css",
-    "main.js": "https://pawnesh.github.io/mood-swings-tracker/static/js/main.8f9a5ee5.chunk.js",
-    "main.js.map": "https://pawnesh.github.io/mood-swings-tracker/static/js/main.8f9a5ee5.chunk.js.map",
-    "runtime~main.js": "https://pawnesh.github.io/mood-swings-tracker/static/js/runtime~main.a967ac65.js",
-    "runtime~main.js.map": "https://pawnesh.github.io/mood-swings-tracker/static/js/runtime~main.a967ac65.js.map",
-    "static/js/2.24440903.chunk.js": "https://pawnesh.github.io/mood-swings-tracker/static/js/2.24440903.chunk.js",
-    "static/js/2.24440903.chunk.js.map": "https://pawnesh.github.io/mood-swings-tracker/static/js/2.24440903.chunk.js.map",
-    "index.html": "https://pawnesh.github.io/mood-swings-tracker/index.html",
-    "precache-manifest.fa69aec785e408f9bbc6e048b1ac94df.js": "https://pawnesh.github.io/mood-swings-tracker/precache-manifest.fa69aec785e408f9bbc6e048b1ac94df.js",
-    "service-worker.js": "https://pawnesh.github.io/mood-swings-tracker/service-worker.js",
-    "static/css/main.229668c4.chunk.css.map": "https://pawnesh.github.io/mood-swings-tracker/static/css/main.229668c4.chunk.css.map"
+    "main.css": "/mood-swings-tracker/static/css/main.229668c4.chunk.css",
+    "main.js": "/mood-swings-tracker/static/js/main.4b9e79fb.chunk.js",
+    "main.js.map": "/mood-swings-tracker/static/js/main.4b9e79fb.chunk.js.map",
+    "runtime~main.js": "/mood-swings-tracker/static/js/runtime~main.fcbc3a10.js",
+    "runtime~main.js.map": "/mood-swings-tracker/static/js/runtime~main.fcbc3a10.js.map",
+    "static/js/2.24440903.chunk.js": "/mood-swings-tracker/static/js/2.24440903.chunk.js",
+    "static/js/2.24440903.chunk.js.map": "/mood-swings-tracker/static/js/2.24440903.chunk.js.map",
+    "index.html": "/mood-swings-tracker/index.html",
+    "precache-manifest.39908ade8114d4907e72ba4700872ea7.js": "/mood-swings-tracker/precache-manifest.39908ade8114d4907e72ba4700872ea7.js",
+    "service-worker.js": "/mood-swings-tracker/service-worker.js",
+    "static/css/main.229668c4.chunk.css.map": "/mood-swings-tracker/static/css/main.229668c4.chunk.css.map"
   }
 }
