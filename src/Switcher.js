@@ -42,7 +42,7 @@ class Switcher extends React.Component{
                 {items}
                 </ul>
             </header>
-            <div className={animateClass}>
+            <div>
             {tabElement}
             </div>
         </div>

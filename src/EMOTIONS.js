@@ -1,38 +1,43 @@
 var EMOTIONS = {
     "Cheerful": {
-        "value": 3,
+        "value": 4,
         "icon" : "1f601",
         "action": "rubberBand"
     },
     "Happy" : {
-        "value": 2,
+        "value": 3,
         "icon" : "1f606",
         "action": "tada"
+    },
+    "Calm" : {
+        "value": 2,
+        "icon" : "1f607",
+        "action": "rotateInUpLeft"
     },
     "Good" : {
         "value": 1,
         "icon" : "1f600",
         "action": "slideInRight"
     },
-    "Calm" : {
+    "Neutral" : {
         "value": 0,
-        "icon" : "1f607",
-        "action": "rotateInUpLeft"
+        "icon" : "1f610",
+        "action": "slideInRight"
+    },
+    "Sad" : {
+        "value": -1,
+        "icon" : "1f622",
+        "action": "fadeInLeft"
     },
     "Annoyed" : {
-        "value": -1,
+        "value": -2,
         "icon" : "1f612",
         "action": "wobble"
     },
     "Frustrated" : {
-        "value": -2,
+        "value": -3,
         "icon" : "1f624",
         "action": "pulse"
-    },
-    "Sad" : {
-        "value": -3,
-        "icon" : "1f622",
-        "action": "fadeInLeft"
     },
     "Angry" : {
         "value": -4,

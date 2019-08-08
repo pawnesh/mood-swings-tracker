@@ -50,6 +50,13 @@ var db = function(){
             localStorage.removeItem(keys[0]);
         }
     }
+
+    this.clear = function(){
+        var emotions = this.getAllEmotion();
+        for(var key in emotions){
+            localStorage.removeItem(key);
+        }
+    }
 }
 
 export default db;

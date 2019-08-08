@@ -11,6 +11,7 @@ class Dashboard extends React.Component {
         this.state = { today: null, week: null, month: null };
         this.db = new db();
         this.updateState = this.updateState.bind(this);
+        this.restart = this.restart.bind(this);
     }
 
     componentDidMount() {
@@ -137,6 +138,12 @@ class Dashboard extends React.Component {
         return el;
     }
 
+    restart(){
+        if(window.confirm('This will delete all the logs?')){
+            this.db.clear();
+        }
+    }
+
     render() {
         var reportElement = [];
 
@@ -155,9 +162,14 @@ class Dashboard extends React.Component {
             reportElement.push(el);
         }
 
+        if(reportElement.length == 0){
+            reportElement = <div class="center"><img src={process.env.PUBLIC_URL+'/images/1f34a.svg'} alt="empty log book"/><br/>Empty Logs</div>;
+        }
+
         // today elemnt
         return <div className="dashboard">
             {reportElement}
+            <button className="restart" onClick={this.restart}>Start Fresh</button>
         </div>
     }
 }

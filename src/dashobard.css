@@ -36,3 +36,22 @@
 .dashboard .block{
     margin-top: 176px;
 }
+
+.dashboard .center{
+    text-align: center;
+    margin-top: 30%;
+}
+.dashboard .center img{
+    width: 30%;
+}
+.dashboard .restart{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #2ea6e5;
+    border-radius: 3px;
+    color: #2ea6e5;
+    background: none;
+    padding: 9px 24px;
+    display: inherit;
+    margin-top: 60px;
+}
