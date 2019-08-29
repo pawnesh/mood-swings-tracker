@@ -40,6 +40,15 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script src="%PUBLIC_URL%/service-worker.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('%PUBLIC_URL%/sw.js')
+        .then(function(reg){
+          // console.log("Yes, it did.");
+        }).catch(function(err) {
+          // console.log("No it didn't. This happened: ", err)
+        });
+    }
+    </script>
   </body>
 </html>

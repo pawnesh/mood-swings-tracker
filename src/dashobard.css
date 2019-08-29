@@ -7,10 +7,6 @@
 .dashboard header h3{
     padding: 9px;
 }
-.dashboard .content{
-    padding: 5px 21px;
-    min-height: 100px;
-}
 
 .dashboard .content img{
     width: 34px;
@@ -29,12 +25,12 @@
     margin: auto;
 }
 
-.dashboard .block:first-child{
-    margin-top: 10px;
-}
-
 .dashboard .block{
-    margin-top: 176px;
+    margin: 2px 3px;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.2);
+    padding: 3px 6px;
+    border-radius: 7px;
 }
 
 .dashboard .center{
