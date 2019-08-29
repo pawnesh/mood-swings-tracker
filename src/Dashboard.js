@@ -23,6 +23,7 @@ class Dashboard extends React.Component {
                 if(EMOTIONS_REVERSE[element])
                     em.push(EMOTIONS_REVERSE[element]);
             });
+            console.log(key);
             emotionsLog.push(em);
         }
 

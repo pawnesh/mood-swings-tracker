@@ -21,7 +21,29 @@ var db = function(){
 
     this.getAllEmotion = function(){
         var emotions = [];
+        var keys = [];
         for (var key in localStorage){
+            if(localStorage.getItem(key)){
+                keys.push(key);
+            }
+        }
+        keys = keys.sort(function(a,b){
+            var a1 = a.split('-').join('');
+            var b1 = b.split('-').join('');
+            a1 = parseInt(a1);
+            b1 = parseInt(b1);
+            if(a1 < b1){
+                return 0;
+            }
+            if(a1 < b1){
+                return 1;
+            }else{
+                return -1;
+            }
+        });
+        
+        for (var i in keys){
+            var key = keys[i];
             if(localStorage.getItem(key)){
                 emotions[key] = localStorage.getItem(key).split(',');
             }
