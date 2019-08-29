@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mood-swings-tracker/precache-manifest.8f2d75fc41683424211cc4c46452328e.js"
+  "/mood-swings-tracker/precache-manifest.bbff0a160300e34a064145db70389ae0.js"
 );
 
 self.addEventListener('message', (event) => {
