@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "23f4af1a2dafd02fdc52b3c0f369044b",
+    "revision": "4e02aeae14ca9216af10c39c033ff3ef",
     "url": "/mood-swings-tracker/index.html"
   },
   {
-    "revision": "9be0c74c971901e6da24",
-    "url": "/mood-swings-tracker/static/css/main.3c777c24.chunk.css"
+    "revision": "2739826a695abf108ad1",
+    "url": "/mood-swings-tracker/static/css/main.0af64b6d.chunk.css"
   },
   {
     "revision": "0367de345e5386181b9f",
     "url": "/mood-swings-tracker/static/js/2.24440903.chunk.js"
   },
   {
-    "revision": "9be0c74c971901e6da24",
-    "url": "/mood-swings-tracker/static/js/main.26a8c41b.chunk.js"
+    "revision": "2739826a695abf108ad1",
+    "url": "/mood-swings-tracker/static/js/main.6ad8ced4.chunk.js"
   },
   {
     "revision": "b3af2ca9233e42c65a51",

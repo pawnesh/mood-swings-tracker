@@ -47,10 +47,7 @@ addEventListener('fetch', function(event) {
                 })
             })
             .catch(function(err) {       // fallback mechanism
-              return caches.open(CACHE_CONTAINING_ERROR_MESSAGES)
-                .then(function(cache) {
-                  return cache.match('/offline.html');
-                });
+             
             });
         }
       })
